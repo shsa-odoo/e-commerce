@@ -155,7 +155,6 @@ def remove_from_cart():
         return {'order_lines': get_order_lines(order)}
     return 'Order not found'
 
-
 @app.route('/checkout', methods=['GET', 'POST'])
 def checkout():
     res = "Not valid session"
